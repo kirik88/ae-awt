@@ -75,7 +75,7 @@ public class JPEGImageWriterSpi extends ImageWriterSpi {
         }
         try {
             java.security.AccessController.doPrivileged(
-                new sun.security.action.LoadLibraryAction("jpeg"));
+                new ae.sun.security.action.LoadLibraryAction("jpeg"));
         } catch (Throwable e) { // Fail on any Throwable
             // if it can't be loaded, deregister and return
             registry.deregisterServiceProvider(this);

@@ -61,7 +61,7 @@ import ae.sun.awt.SunToolkit;
 
 import sun.security.util.SecurityConstants;
 
-import sun.util.CoreResourceBundleControl;
+import ae.sun.util.CoreResourceBundleControl;
 
 /**
  * This class is the abstract superclass of all actual
@@ -1643,7 +1643,7 @@ public abstract class Toolkit {
     static void loadLibraries() {
         if (!loaded) {
             java.security.AccessController.doPrivileged(
-                          new sun.security.action.LoadLibraryAction("awt"));
+                          new ae.sun.security.action.LoadLibraryAction("awt"));
             loaded = true;
         }
     }

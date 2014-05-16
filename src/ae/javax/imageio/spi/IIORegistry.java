@@ -50,7 +50,7 @@ import ae.com.sun.imageio.spi.InputStreamImageInputStreamSpi;
 import ae.com.sun.imageio.spi.OutputStreamImageOutputStreamSpi;
 import ae.com.sun.imageio.spi.RAFImageInputStreamSpi;
 import ae.com.sun.imageio.spi.RAFImageOutputStreamSpi;
-import sun.awt.AppContext;
+import ae.sun.awt.AppContext;
 import java.util.ServiceLoader;
 import java.util.ServiceConfigurationError;
 

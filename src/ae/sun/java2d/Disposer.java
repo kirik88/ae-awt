@@ -55,11 +55,11 @@ public class Disposer implements Runnable {
     public static int refType = PHANTOM;
 
     static {
-        java.security.AccessController.doPrivileged(
-            new sun.security.action.LoadLibraryAction("awt"));
+        /*java.security.AccessController.doPrivileged(
+            new ae.sun.security.action.LoadLibraryAction("awt"));
         initIDs();
         String type = (String) java.security.AccessController.doPrivileged(
-                new sun.security.action.GetPropertyAction("sun.java2d.reftype"));
+                new ae.sun.security.action.GetPropertyAction("sun.java2d.reftype"));
         if (type != null) {
             if (type.equals("weak")) {
                 refType = WEAK;
@@ -68,7 +68,7 @@ public class Disposer implements Runnable {
                 refType = PHANTOM;
                 System.err.println("Using PHANTOM refs");
             }
-        }
+        }*/
         disposerInstance = new Disposer();
         java.security.AccessController.doPrivileged(
             new java.security.PrivilegedAction() {

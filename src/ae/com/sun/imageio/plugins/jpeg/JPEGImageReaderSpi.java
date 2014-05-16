@@ -68,7 +68,7 @@ public class JPEGImageReaderSpi extends ImageReaderSpi {
         }
         try {
             java.security.AccessController.doPrivileged(
-                new sun.security.action.LoadLibraryAction("jpeg"));
+                new ae.sun.security.action.LoadLibraryAction("jpeg"));
             // Stuff it all into one lib for first pass
             //java.security.AccessController.doPrivileged(
             //new sun.security.action.LoadLibraryAction("imageioIJG"));

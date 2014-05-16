@@ -50,8 +50,8 @@ import ae.javax.imageio.spi.ImageTranscoderSpi;
 import ae.javax.imageio.spi.ServiceRegistry;
 import ae.javax.imageio.stream.ImageInputStream;
 import ae.javax.imageio.stream.ImageOutputStream;
-import sun.awt.AppContext;
-import sun.security.action.GetPropertyAction;
+import ae.sun.awt.AppContext;
+import ae.sun.security.action.GetPropertyAction;
 
 /**
  * A class containing static convenience methods for locating
